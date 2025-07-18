@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="EIF_Monitor_WPF.SYS_Console"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EIF_Monitor_WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="770"  >
+    <Grid>
+        <Label x:Name="label" Content="Host Name :" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Foreground="LawnGreen"/>
+        <Label x:Name="lbHostname" Content="HostName" HorizontalAlignment="Left" Margin="84,0,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label2" Content="Host IP :" HorizontalAlignment="Left" Margin="173,0,0,0" VerticalAlignment="Top" Foreground="LawnGreen"/>
+        <Label x:Name="lbIP" Content="HostIP" HorizontalAlignment="Left" Margin="234,0,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+        <Label x:Name="label3" Content="CPU :" HorizontalAlignment="Left" Margin="358,0,0,0" VerticalAlignment="Top" Foreground="LawnGreen"/>
+        <ProgressBar x:Name="barCPU" HorizontalAlignment="Left" Margin="403,5,0,0" VerticalAlignment="Top" Width="87" Height="18" Value="12"/>
+        <Label x:Name="lbCpu" Content="12.34" HorizontalAlignment="Left" Margin="426,0,0,0" VerticalAlignment="Top" Foreground="Black"/>
+        <Label x:Name="label4" Content="RAM :" HorizontalAlignment="Left" Margin="494,0,0,0" VerticalAlignment="Top" Foreground="LawnGreen"/>
+        <ProgressBar x:Name="barRAM" HorizontalAlignment="Left" Margin="539,5,0,0" VerticalAlignment="Top" Width="87" Height="18" Value="12"/>
+        <Label x:Name="lbRam" Content="12.34" HorizontalAlignment="Left" Margin="560,0,0,0" VerticalAlignment="Top" Foreground="Black" />
+        <Label x:Name="label5" Content="DISK :" HorizontalAlignment="Left" Margin="632,0,0,0" VerticalAlignment="Top" Foreground="LawnGreen"/>
+        <ProgressBar x:Name="barDISK" HorizontalAlignment="Left" Margin="677,5,0,0" VerticalAlignment="Top" Width="87" Height="18" Value="12"/>
+        <Label x:Name="lbDisk" Content="12.34" HorizontalAlignment="Left" Margin="698,0,0,0" VerticalAlignment="Top" Foreground="Black"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="EIF_Monitor_WPF.eif_console"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EIF_Monitor_WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="212" Margin="5.5">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <GroupBox x:Name="lbEQP_Name" Header="GroupBox" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Top" Foreground="White" Height="50" Width="210" BorderBrush="Black" >
+            <DockPanel Name="X" >
+                <Label x:Name="lbStatus" Content="R" HorizontalAlignment="Left" Margin="0,0"  VerticalAlignment="Center" Foreground="Lime" FontSize="12" FontWeight="Bold"/>
+                <Label x:Name="lbLotRunning" Content="Lot Running" HorizontalAlignment="Left" Margin="0,0,0,0"  VerticalAlignment="Center" Foreground="Lime" FontSize="12" FontWeight="Bold"/>
+                <Label x:Name="lbDryRun" Content="Dry" HorizontalAlignment="Left" Margin="0,0,0,0"  VerticalAlignment="Center" FontSize="12" FontWeight="Bold" Foreground="#FFD4881E"/>
+                <Label x:Name="lbItPass" Content="IT" HorizontalAlignment="Left" Margin="0,0,0,0"  VerticalAlignment="Center" Foreground="#FFED2828" FontSize="12" FontWeight="Bold"/>
+                <Label x:Name="lbDEV" Content="DEV" HorizontalAlignment="Left" Margin="0,0.333"  VerticalAlignment="Center" Foreground="#FF0CABE8" FontSize="12" FontWeight="Bold"/>
+            </DockPanel>
+        </GroupBox>
+
+    </Grid>
+</UserControl>
